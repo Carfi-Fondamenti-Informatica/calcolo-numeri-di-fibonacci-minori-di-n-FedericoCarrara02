@@ -10,14 +10,15 @@ int main() {
         int f1 = 1;
         int f2 = 1;
         int f = 0;
-        while (f < n) {
+        while (f <= n) {
             f1 = f2;
             f2 = f;
             f = f1 + f2;
-            if (f > n) {
+             if (f > n){
                 return 0;
+            } else {
+                cout << f << endl;
             }
-            cout << f << endl;
         }
     return 0;
 }
